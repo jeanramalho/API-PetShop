@@ -8,8 +8,8 @@ module.exports = app => {
     app.post('/atendimentos' , (req,res) =>{
        const atendimento = req.body
 
-       Atendimento.adiciona(atendimento)
-        res.send('você está na rota atendimentos e está fazendo um post')
+       Atendimento.adiciona(atendimento, res)
+        
     })
 }
     
